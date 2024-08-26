@@ -9,6 +9,7 @@ import  useOrder from "./hooks/useOrder"
 function App() {
 
   const { order, addItem, removeItem, decrementItem, tip, setTip, placeOrder } = useOrder()
+  console.log('hola desde la modificacion de git');
   
 
   return (
@@ -31,7 +32,7 @@ function App() {
             ))}
           </div>
         </div>
-
+            
         <div className="border border-dashed border-slate-300 p-5 rounded-lg space-y-10">
           {order.length > 0 ? (
             <>
